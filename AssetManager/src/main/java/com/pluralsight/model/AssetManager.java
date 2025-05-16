@@ -4,6 +4,9 @@ import java.util.ArrayList;
 public class AssetManager {
     public static void main(String[] args) {
         ArrayList<Asset> assets = new ArrayList<>();
+        Asset a = new House();
+        System.out.println(a.description);
+
 
         assets.add(new House(
             "My vacation home",

@@ -6,12 +6,10 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Asset {
-    private String description;
+public abstract class Asset {
+    protected String description;
     private String dateAcquired;
     private double originalCost;
 
-    public double getValue() {
-        return originalCost;
-    }
+    public abstract double getValue();
 }
